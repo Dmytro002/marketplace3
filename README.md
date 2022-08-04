@@ -1,5 +1,7 @@
 Код для створення таблиць:
 Таблиця товарів:
+
+
 CREATE TABLE Product(
 id int primary key generated always as identity,
 
@@ -11,6 +13,9 @@ userId int references "user"(id) on delete cascade
 
 );
 Таблиця зареєстрованих користувачів:
+
+
+
 CREATE TABLE "user" (
 id int primary key generated always as identity,
 
